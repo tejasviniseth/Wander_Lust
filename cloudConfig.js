@@ -15,7 +15,7 @@ const storage = new CloudinaryStorage({
     // Use path.parse to extract only the base name (without extension)
     const name = path.parse(file.originalname).name;
     return {
-      folder: 'stayfinder_DEV',
+      folder: 'wanderlust_DEV',
       public_id: `${Date.now()}-${name}`, // Using the base name only
       format: file.mimetype.split('/')[1],  // Cloudinary will append the extension based on this format
     };
